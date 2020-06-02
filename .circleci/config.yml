@@ -1,5 +1,5 @@
 # .circleci/config.yml
-version: 1
+version: 2.1
 jobs:
     build:
         docker:
@@ -36,7 +36,7 @@ jobs:
                       ssh ${PRODUCTION_SERVER_USER}@${PRODUCTION_SERVER_ADDRESS} -p ${PRODUCTION_SERVER_PORT}"cd ${PRODUCTION_SERVER_PATH} && ./deploy.sh"
 
 workflows:
-    version: 1
+    version: 2.1
     build-and-deploy:
         jobs:
             - build
