@@ -23,6 +23,7 @@ services:
       - /srv/app/var/sessions/
     environment:
       - SYMFONY_VERSION
+      - MAILER_DSN
 
   nginx:
     build:
