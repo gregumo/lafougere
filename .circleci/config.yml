@@ -27,7 +27,7 @@ jobs:
         steps:
             - add_ssh_keys:
                   fingerprints:
-                      - "${PRODUCTION_SERVER_SSH_FINGERPRINT}"
+                      - "5e:5b:c5:83:84:67:3f:60:9c:18:48:e0:56:57:b1:7c"
             - run:
                   name: "Deploy image to production"
                   command: |
