@@ -1,0 +1,79 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Espaces collectifs{% endblock %}
+
+{% block content %}
+    <div class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4">Espaces collectifs</h2>
+
+        <p class="intro">
+            Aujourd'hui, La Fougère ne dispose pas encore d'espaces collectifs. Pour assurer la pérennité de nos
+            activités nous espérons investir plusieurs types de lieux. Chacun aura son propre fonctionnement que
+            nous pourrons déterminer ensemble.<br/>
+            À terme, nous espérons que La Fougère pourra acquérir ses propres locaux et terrains afin d'apporter
+            toujours
+            plus d'autonomie et de résilience à ses membres.
+        </p>
+
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/espace_salles_et_ateliers.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Salles et ateliers</h3>
+                <p>La Fougère souhaite <b>s'installer durablement dans des locaux</b> afin d'accueillir les réunions du
+                    collectif, stocker les matériaux, la grainothèque, etc.</p>
+                <b>Plusieurs ateliers</b> pourront être créés pour accueillir les activités du collectif : un atelier
+                bois, un
+                atelier électronique, un atelier couture, etc.</p>
+            </div>
+        </div>
+
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/espace_jardin.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Potager</h3>
+                <p><b>Un potager collectif basé sur les principes de la permaculture</b>, ça vous tente ? Lorsque le
+                    collectif
+                    comptera
+                    suffisamment de membres, nous pourrons envisager de créer notre potager collectif pour y cultiver
+                    fruits et légumes toute l'année.</p>
+            </div>
+        </div>
+
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/espace_poulailler.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Poulailler</h3>
+                <p>
+                    Le poulailler collectif permettrait à La Fougère de <b>produire localement des œufs frais et de
+                        qualité</b> pour ses membres. Ce serait aussi un espace pédagogique pour les enfants et un lieu
+                    de production de fumier qui constitue un excellent engrais azoté pour le potager.
+                </p>
+            </div>
+        </div>
+
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/espace_foret_comestible.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Jardin forêt</h3>
+                <p>Quoi de plus autonome et pérenne qu'un jardin forêt ? C’est un <b>jardin comestible</b> étagé imitant
+                    la structure, la biodiversité et la résilience d’un jeune boisement naturel. On y trouve donc des
+                    arbres nourriciers associés à des arbustes, des vivaces
+                    herbacées, des aromatiques, des annuelles, des légumes-racines, des champignons et des lianes.</p>
+            </div>
+        </div>
+
+        <p class="outro">
+            <b>Une autre idée ?</b><br/>
+            Rejoignez-nous et parlons-en !
+        </p>
+
+    </div>
+{% endblock %}

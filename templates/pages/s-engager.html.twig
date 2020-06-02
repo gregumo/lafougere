@@ -1,0 +1,111 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}S'engager{% endblock %}
+
+{% block content %}
+    <div class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4">S'engager pour le collectif</h2>
+
+        <h3>3 heures de participation par mois</h3>
+        <p>Une participation active de 3 heures par mois et par adulte sera nécessaire au développement et à la
+            pérennité de La Fougère.</p>
+        <p>Ces 3 heures pourront se répartir dans les différents domaines d’activité nécessaires à son bon
+            fonctionnement : organisation d'un atelier, gestion des matériauthèque et grainothèque, tâches
+            administratives, etc. Vous choisissez où vous voulez agir, selon vos intérêts personnels, vos
+            disponibilités, et les besoins du collectif.</p>
+
+        <h3>Une cotisation mensuelle</h3>
+        <p>Chaque adulte engagé dans La Fougère verse une cotisation mensuelle de 2 à 10€. Dans un souci
+            d'accessibilité et de lutte contre les exclusions, cette cotisation est indexée sur le quotient
+            familial. Voici une première proposition de grille :</p>
+        <table class="table hidden-xs">
+            <tr>
+                <th>Quotient familial</th>
+                <td>Moins de 235€</td>
+                <td>235€ à 384€</td>
+                <td>385€ à 548€</td>
+                <td>549€ à 959€</td>
+                <td>960€ à 1370€</td>
+                <td>1371€ à 1900€</td>
+                <td>1901€ à 2500€</td>
+                <td>2501 à 3333€</td>
+                <td>Plus de 3333€</td>
+            </tr>
+            <tr>
+                <th>Cotisation mensuelle</th>
+                <td>2€</td>
+                <td>3€</td>
+                <td>4€</td>
+                <td>5€</td>
+                <td>6€</td>
+                <td>7€</td>
+                <td>8€</td>
+                <td>9€</td>
+                <td>10€</td>
+            </tr>
+        </table>
+        <table class="table hidden-md-up">
+            <tr>
+                <th>Quotient familial</th>
+                <td>Moins de 235€</td>
+                <td>235€ à 384€</td>
+                <td>385€ à 548€</td>
+                <td>549€ à 959€</td>
+                <td>960€ à 1370€</td>
+            </tr>
+            <tr>
+                <th>Cotisation mensuelle</th>
+                <td>2€</td>
+                <td>3€</td>
+                <td>4€</td>
+                <td>5€</td>
+                <td>6€</td>
+            </tr>
+        </table>
+        <table class="table hidden-md-up">
+            <tr>
+                <th>Quotient familial</th>
+                <td>1371€ à 1900€</td>
+                <td>1901€ à 2500€</td>
+                <td>2501 à 3333€</td>
+                <td>Plus de 3333€</td>
+            </tr>
+            <tr>
+                <th>Cotisation mensuelle</th>
+                <td>6€</td>
+                <td>7€</td>
+                <td>8€</td>
+                <td>9€</td>
+                <td>10€</td>
+            </tr>
+        </table>
+        <p>Chaque membre du collectif renouvelle son engagement dans le collectif tous les 6 mois en versant
+            l'intégralité de ses cotisations pour les 6 mois à venir.</p>
+
+        <h3>Participation aux votes</h3>
+        <p>Des réunions ouvertes à tous les adhérents se tiendront régulièrement pour organiser la vie du collectif.
+            Tout changement dans l'organisation de La Fougère, proposition d'action ou achat de matériel sont ensuite
+            <b>soumis
+                au vote de l'ensemble des membres via une plateforme web dédiée</b> pour permettre à tous de voter, de
+            manière anonyme. Dans la mesure du possible, nous utiliserons un mode de vote comme le <a
+                    href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_%C3%A9lectoral_%C3%A0_pr%C3%A9f%C3%A9rences_multiples_ordonn%C3%A9es"
+                    target="_blank">
+                vote à préférences multiples ordonnées</a>.
+        </p>
+
+        <h3>Une plateforme web pour s'organiser</h3>
+        <p class="before-list">Un site internet est d'ors et déjà en cours de construction pour faciliter
+            l'organisation du collectif.
+            Il proposera notamment :</p>
+        <ul>
+            <li>un annuaire des membres</li>
+            <li>un calendrier des actions passées et à venir</li>
+            <li>un calendrier des réunions d'organisation du collectif</li>
+            <li>un catalogue des actions réalisées pour faciliter leur reconduction</li>
+            <li>un espace de vote en ligne, anonyme et sécurisé</li>
+            <li>un espace comptabilité, pour une transparence totale</li>
+            <li>etc.</li>
+        </ul>
+
+    </div>
+{% endblock %}

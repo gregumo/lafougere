@@ -1,0 +1,8 @@
+contact:
+    name.label: Nom
+    from.label: Adresse mail
+    message.label: Message
+    submit.label: Envoyer
+    form.success: Votre message a bien été envoyé. Merci !
+    email.subject: Nouveau message sur lafougere.org
+    email.date.label: Date d'envoi

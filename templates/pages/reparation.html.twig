@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Réparation{% endblock %}
+
+{% block content %}
+    <div class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4">Réparation</h2>
+        <p class="intro">
+            Des ateliers de réparation sont proposés aux membres de La Fougère pour les aider à réparer leurs
+            biens personnels. Les outils appartenant au collectif peuvent aussi être réparés durant ces
+            ateliers.<br/>
+            Les adhérents prennent en charge les dépenses nécessaires à la réparation de
+            leurs objets personnels.<br/>
+            Les ateliers ne génèrent aucune recette pour le collectif. Ce sont des temps de transmission et
+            d'apprentissage dans des domaines accessibles à tous : couture, bricolage, électronique, etc.
+        </p>
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/reparation_textile.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Textile</h3>
+                <p>La Fougère veut sensibiliser ses membres à la réduction des déchets textiles. Lors d'ateliers
+                    spécifiques, nous apprenons ensemble à réparer une déchirure, coudre un bouton, repriser, rapiécer,
+                    faire un ourlet, etc.</p>
+            </div>
+        </div>
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/reparation_bois.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Bois</h3>
+                <p>En matière de meuble, de nombreuses réparations sont possibles : un vieux meuble dont la structure
+                    est affaiblie peut être renforcé; on peut donner une seconde jeunesse à un objet passé de mode; il
+                    est même possible de construire des meubles neufs à partir de bois de récupération. La Fougère
+                    dispose de tout le matériel nécessaire pour ces ateliers autour du bois.</p>
+            </div>
+        </div>
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/reparation_electronique.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Électronique</h3>
+                <p>Une alimentation, un grille-pain, un micro-ondes ou un mixeur qui ne fonctionnent plus ?
+                    Il est souvent difficile de trouver le temps ou les personnes capables de réparer ces objets.
+                    C'est parfois plus simple et moins cher de les jeter pour les remplacer par du neuf. À travers ces
+                    ateliers, La Fougère peut nous aider à apprendre les bases pour réparer nos objets électroniques du
+                    quotidien.</p>
+            </div>
+        </div>
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/reparation_velo.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Vélo</h3>
+                <p>Nos vélos ont besoin d'être entretenus et réparés régulièrement pour prolonger leur durée de vie :
+                    graissage, réglage des chaînes, freins et dérailleurs, changement de pneus, etc.
+                Ces ateliers permettent aux membres de mutualiser l'acquisition d'outils essentiels à la
+                réparation de tous les types de vélo.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

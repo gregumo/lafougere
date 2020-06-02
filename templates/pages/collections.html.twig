@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Collections et stockage{% endblock %}
+
+{% block content %}
+    <div class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4">Collections et stockage</h2>
+
+        <p class="intro">
+            Plusieurs collections sont mises à disposition des membres de La Fougère.<br/>
+            Ces collections sont constituées grâce à la récupération des surplus lors des ateliers, des dons
+            des membres ou des achats votés lors des réunions d'organisation du collectif.<br/>
+            Chaque collection a son propre fonctionnement.
+        </p>
+
+
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/collection_grainotheque.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Grainothèque</h3>
+                <p>Aujourd'hui, 90% des graines semées en Europe appartiennent à 5 entreprises. Ces multinationales
+                    développent des hybrides F1, graines non-reproductibles, obligeant les producteurs et jardiniers
+                    à racheter leurs semences chaque année. La Fougère souhaite s'inscrire dans
+                    une <b>démarche de conservation, de reproduction et d'échange de graines</b> par la mise en place
+                    d'une
+                    grainothèque. Nous agissons ainsi pour la conservation de notre patrimoine semencier tout en
+                    favorisant la biodiversité des plantes cultivées et en adaptant ces semences à notre territoire.
+                </p>
+            </div>
+        </div>
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/collection_materiautheque.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Matériauthèque</h3>
+                <p>Toujours dans une optique de réduction des déchets et de réutilisation, une matériauthèque est
+                    constituée pour et par les membres de La Fougère. Elle est alimentée grâce aux dons des membres et
+                    structures partenaires, des surplus des ateliers de fabrication ou l'achat de matériaux par le
+                    collectif.</p>
+                <p>On y trouve de tout : <b>bois, métal, quincaillerie, électronique, textiles, compost, purin,
+                        broyats, paille, etc.</b></p>
+                <p>Les matériaux sont réservés en priorité pour les ateliers de fabrication. Le reste est entreposé
+                    et proposé à la vente pour les membres du collectif à des tarifs très accessibles. Les
+                    bénéfices de la matériauthèque permettront ensuite d'acquérir de nouveaux matériaux.
+                </p>
+            </div>
+        </div>
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/collection_mediatheque.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Médiathèque</h3>
+                <p>La Fougère propose de constituer une médiathèque autour des sujets liés à son activité. Il ne
+                    s'agît pas ici de faire doublon avec la médiathèque municipale, mais de mettre à disposition de
+                    nouveaux supports.</p>
+                <p>La médiathèque est alimentée grâce aux dons de ses membres mais aussi par des achats décidés
+                    collectivement : livres, abonnements à des magazines, etc.</p>
+            </div>
+        </div>
+
+        <p class="outro">
+            <b>Une autre idée ?</b><br/>
+            Rejoignez-nous et parlons-en !
+        </p>
+
+    </div>
+{% endblock %}

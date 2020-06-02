@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div id="header"></div>
+    <div class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4 homeH2">Collectif d'autonomie et de résilience à La Montagne (44)</h2>
+        <p>
+            La Fougère est un regroupement d’habitants qui mènent des actions pour développer l’autonomie et la
+            résilience à l’échelle locale.
+        </p>
+        <p>
+            Avec La Fougère, les habitants s’engagent dans un processus de changement et d'adaptation pour évoluer
+            vers <b>un modèle de société coopérative et durable</b> dans le respect de leur lieu de vie.
+        </p>
+        <p>
+            Chaque mois, les membres donnent <b>3 heures de leur temps et une participation financière</b> pour faire
+            avancer le collectif. Les actions réalisées apportent aussi des recettes que le collectif pourra utiliser
+            pour mener des projets de plus en plus ambitieux : acquisition d’outils, de matériel, de locaux, de terres,
+            etc.
+        </p>
+
+        <p>
+            Ainsi, grâce à La Fougère, des actions qui prennent trop de temps à l’échelle d’un foyer deviennent
+            envisageables. Des outils trop coûteux pour une famille peuvent être achetés par le collectif pour être
+            mutualisés. Les membres peuvent fabriquer localement des produits simples qu’ils n’auront plus jamais besoin
+            d’acheter en grande surface. La transmission des savoirs et compétences peut être décuplée.
+        </p>
+
+        <div class="intro">
+
+            <p class="before-list">Chaque action menée par les membres de La Fougère favorise :</p>
+            <ul>
+                <li>La démocratie participative dans toutes les prises de décision</li>
+                <li>Le partage, la transmission, l’apprentissage, la culture de l’entraide</li>
+                <li>La réparation, le recyclage, la réutilisation des objets</li>
+                <li>L’utilisation de matières premières à l’échelle locale</li>
+                <li>La diminution d’intrants dépendants des énergies fossiles</li>
+                <li>L’utilisation de produits biologiques (en opposition à l’agriculture conventionnelle)</li>
+                <li>L’utilisation de produits d’origine végétale plutôt qu’animale</li>
+                <li>Les objets durables, réparables, low-tech</li>
+                <li>L’expérimentation</li>
+            </ul>
+        </div>
+
+        <h3>Intéressé·e ?</h3>
+        <p>
+            Vous souhaitez améliorer votre impact sur l'environnement, partager vos savoirs et savoir-faire,
+            gagner en autonomie, avoir une vie plus saine, créer un réseau et surtout être vraiment acteur
+            dans ce processus ? Alors <a href="{{ path('app_page_page', {slug : 'contact'}) }}">contactez-nous</a>.
+        </p>
+    </div>
+{% endblock %}

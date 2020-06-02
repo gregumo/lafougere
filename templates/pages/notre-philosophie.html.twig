@@ -1,0 +1,100 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Notre philosophie{% endblock %}
+
+{% block content %}
+    <div class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4">Notre philosophie</h2>
+
+        <h3>Résilience, autonomie, écologie</h3>
+        <p>L'objectif principal du collectif est de mener à bien des actions visant à <b>améliorer notre résilience</b>
+            à l'échelle de la ville de La Montagne. Par "résilience", nous entendons <i>notre capacité
+                à surmonter une perturbation ou une crise majeure pour retrouver un état d'équilibre</i>.</p>
+        <p> Nous pensons que l'autonomie individuelle comme collective, est un axe important pour
+            développer notre résilience. Qu'il s'agisse d'<b>une autonomie alimentaire, en matières premières, en
+                techniques et savoirs</b>, il existe de nombreux domaines dans lesquels nous pouvons évoluer.</p>
+        <p>Nous pensons aussi que cette évolution ne peut se faire qu'<b>en respectant notre environnement et en
+                composant avec ses contraintes et limites</b>. Chaque action de La Fougère s'attache donc à favoriser
+            les ressources locales, non fossiles et à repenser nos activités de manière durable.</p>
+
+        <h3>Du simple atelier à la gestion d'espaces collectifs</h3>
+        <p>La Fougère se veut être <b>un projet qui évolue sur plusieurs temps</b>, en fonction des moyens humains,
+            matériels et financiers dont nous disposerons.</p>
+        <p> Une première phase permettra d'organiser la vie démocratique et administrative du collectif, d'acquérir des
+            outils et matériaux, d'organiser des ateliers de fabrication et de réparation, de mutualiser nos
+            connaissances et savoir-faire.</p>
+        <p>Forts de nos expériences et d'un collectif suffisamment nombreux, nous
+            pourrons alors projeter des actions plus ambitieuses : acquisition d'espaces collectifs pour les réunions et
+            ateliers, de terres agricoles et forestières, etc.</p>
+
+        <h3>Un collectif ouvert et démocratique</h3>
+        <p>La Fougère est un collectif démocratique, autonome et non partisan. Ce projet appartient à ses coopérateurs
+            et chaque personne qui s'y engage peut proposer des changements, des améliorations.</p>
+        <p>En parallèle des actions, des réunions sont régulièrement organisées pour décider des évolutions
+            administratives et juridiques du collectif : statut, montant des cotisations, temps de vacation, etc.</p>
+        <p>Tous les adultes pourront voter selon le principe <b>1 personne = 1 voix en
+                assemblée générale</b>.</p>
+        <p>Enfin, le collectif s'attachera à être accessible à tous en adaptant la participation financière demandée
+            aux ressources de chacun (cf. <a href="{{ path('app_page_page', {slug : 's-engager'}) }}">S'engager</a>).
+        </p>
+
+        <h3>Un modèle économique</h3>
+
+        <h4>Financement par la Fougère</h4>
+        <p class="before-list">Tous les achats qui servent à l'ensemble des membres sont intégralement financés par
+        La Fougère. Par exemple :
+        <ul>
+            <li>l'achat de matériaux et matières premières</li>
+            <li>l'achat d'outils</li>
+            <li>l'achat de livres ou d'abonnements si une bibliothèque est mise en place</li>
+            <li>l'achat de locaux ou terrains quand nous seront suffisamment nombreux</li>
+        </ul>
+        <p>La trésorerie de La Fougère permet aussi de couvrir les frais de fonctionnement du collectif et
+            d'avancer les dépenses nécessaires à la mise en place des différentes actions.</p>
+
+        <h4>Achat de biens ou services par des membres du collectif</h4>
+        <p>Les ateliers, formations, productions, etc. ne bénéficiant qu’à une petite partie des membres de La Fougère,
+            sont facturés individuellement. Pour offrir plus de moyens à La Fougère, nous proposons que ces biens et
+            services que notre structure vend à ses membres soient facturés <b>au prix coutant + 10% qui reviendront au
+                collectif</b>.</p>
+
+        <p class="example">
+            <b>Exemple : atelier de fabrication de lessive</b><br/>
+            Le collectif décide d'organiser un atelier pour fabriquer 50 litres de lessive tous les trimestres. Les
+            matières premières (savon de Marseille, huiles essentielles, percarbonate de soude, etc.), si elles ne sont
+            pas déjà présentes en stock, sont achetées avec la trésorerie de La Fougère.<br/>
+            La lessive produite peut alors être vendue aux coopérateurs qui en ont besoin, qu'ils aient participé ou non
+            à l'atelier de fabrication. La lessive sera vendue au prix coutant + 10% de
+            recettes pour le collectif.<br/>
+            Ainsi, une action qui n'est utile qu'à une partie du collectif permet aussi à La Fougère de consolider sa
+            trésorerie pour d'autres actions.
+        </p>
+
+        <h4>Financement d'un projet sur volontariat</h4>
+        <p>Lorsqu'un projet est soutenu par une majorité de membres mais que La Fougère ne dispose pas des fonds
+            pour assurer sa mise en place, il peut être financé sur la base du volontariat. Un système de
+            <i>financement participatif</i> sera organisé pour permettre aux membres intéressés de faire un don
+            (cohérent avec le montant de l'action). Si la somme réunie ne permet pas de couvrir les dépenses
+            nécessaires, ce projet reste en tête de liste mais ne sera mené à bien que lorsque La Fougère pourra le
+            financer.</p>
+
+
+        <h4>Dons de matériels</h4>
+        <p>Dans l'optique de recycler au maximum nos objets et déchets, La Fougère est bien évidemment ouverte à tous
+            les dons d'outils et de matériaux que ses membres souhaitent faire. Cela permettra par exemple de
+            constituer une matériauthèque commune.</p>
+
+        <h3>Vers un statut de coopérative</h3>
+        <p>Le statut juridique actuel de La Fougère est une association loi 1901. Ce statut permettra de coordonner les
+            premières actions du collectif, toujours dans une optique non lucrative.</p>
+        <p>Cependant, à travers le modèle présenté ici, il apparaît intéressant d'envisager la création d'une réelle
+            coopérative à moyen terme. Nous pensons notamment au statut de <b>société coopérative d’intérêt
+                collectif</b> (SCIC) dont l'objet est <i>la production ou la fourniture de biens et de services
+                d’intérêt collectif qui présentent un caractère d’utilité sociale</i>. Dans une SCIC, le capital est
+            détenu par les bénévoles et bénéficiaires de l’activité (clients, usagers, fournisseurs). Les
+            collectivités locales peuvent aussi y être intégrées.</p>
+        <p>À plus long terme, si le collectif réunit un nombre conséquent d'habitants, nous pourrions imaginer
+            la création de postes pour assurer la gestion quotidienne de la structure.</p>
+
+    </div>
+{% endblock %}

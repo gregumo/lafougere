@@ -1,0 +1,71 @@
+{% set mainItems = [
+    ['notre-philosophie', 'file-text-o', 'Notre philosophie'],
+    ['s-engager', 'file-text-o', 'S\'engager'],
+    ['nos-actions', 'file-text-o', 'Nos actions'],
+    ['contact', 'glass', 'Contact'],
+    ['mentions-legales', 'glass', 'Mentions légales']
+] %}
+
+{% set actionItems = [
+    ['fabrication', 'gavel', 'Fabrication'],
+    ['reparation', 'wrench', 'Réparation'],
+    ['collections', 'stack-overflow', 'Collections'],
+    ['formation', 'slideshare', 'Formation'],
+    ['location', 'retweet', 'Location'],
+    ['espaces-collectifs', 'tree', 'Espaces collectifs']
+] %}
+
+<nav id="sidebar">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary {% if slug == 'home' %}toggleHomeVersion{% endif %}">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Toggle Menu</span>
+        </button>
+    </div>
+    <div class="p-4">
+        <h1><a href="{{ path('app_page_home') }}" class="logo">La Fougère</a></h1>
+        <div class="clearfix"></div>
+        <ul class="list-unstyled components mb-5">
+            <li {% if slug == 'home' %}class="active"{% endif %}>
+                <a href="{{ path('app_page_home') }}">Accueil</a>
+            </li>
+            {% for mainItem in mainItems %}
+                <li class="
+                    {% if slug is defined and mainItem[0] == slug %} active{% endif %}
+                    {% if mainItem[0] == 'nos-actions' %} actionItem hidden-xs{% endif %}
+                ">
+                    {% if mainItem[0] == 'nos-actions' %}
+                        <a href="#">
+                            {{ mainItem[2] }} <i class="fa fa-caret-right"></i>
+                        </a>
+                        <div class="actionSubmenu">
+                            <ul class="list-unstyled components">
+                            {% for actionItem in actionItems %}
+                                <li {% if slug is defined and actionItem[0] == slug %}class="active"{% endif %}>
+                                    <a href="{{ path('app_page_page', {slug : actionItem[0]}) }}">
+                                        {{ actionItem[2] }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                            </ul>
+                        </div>
+                    {% else %}
+                        <a href="{{ path('app_page_page', {slug : mainItem[0]}) }}">
+                            {{ mainItem[2] }}
+                        </a>
+                    {% endif %}
+                </li>
+                {% if mainItem[0] == 'nos-actions' %}
+                    {% for actionItem in actionItems %}
+                        <li class="{% if slug is defined and actionItem[0] == slug %} active{% endif %} hidden-md-up">
+                            <a href="{{ path('app_page_page', {slug : actionItem[0]}) }}">
+                                {{ actionItem[2] }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+        </ul>
+
+    </div>
+</nav>

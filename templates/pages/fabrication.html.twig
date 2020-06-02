@@ -1,0 +1,124 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Fabrication{% endblock %}
+
+{% block content %}
+    <div class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4">Fabrication</h2>
+        <p class="intro">
+            Les ateliers de fabrication permettent de fabriquer des biens pour les membres de La Fougère ou pour
+            le collectif.<br/>
+            Les dépenses nécessaires à l'achat des matériaux sont avancées avec la trésorerie du collectif.<br/>
+            Les outils requis sont mis à disposition par La Fougère ou prêtés par les adhérents.<br/>
+            Lorsqu'un bien est fabriqué pour un membre, il lui est vendu par la Fougère au prix coutant + 10% de
+            recettes qui serviront au collectif pour financer d'autres actions.
+        </p>
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/fabrication_produits_menagers.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Produits et accessoires ménagers</h3>
+                <p>La Fougère propose de mutualiser la fabrication de tous ces produits qui nous servent au quotidien :
+                    <b>nettoyant multi-usage, produit vaisselle, lessive, éponge lavable, sopalin réutilisable,
+                        mouchoir, etc.</b>
+                </p>
+                <p>Nous aurons ainsi la garantie d'utiliser des produits naturels, sains, peu chers et produits
+                    localement.</p>
+            </div>
+        </div>
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/fabrication_cosmetiques.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Produits d’hygiène et cosmétiques</h3>
+                <p>Comme pour les produits d'entretien, il est possible de fabriquer ensemble de nombreux produits
+                    d'hygiène
+                    et cosmétiques : <b>savon, shampoing, déodorant, dentifrice, crèmes, huiles essentielles, etc.</b>
+                </p>
+            </div>
+        </div>
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/fabrication_chauffage_solaire.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Chauffage solaire</h3>
+                <p>Ce type de chauffage solaire <i>- ou capteur solaire à air - </i>permet de réchauffer une pièce de
+                    vie.
+                    L'air provenant de l'habitation circule dans le panneau de bas en haut en suivant des chicanes.
+                    Grâce à un "corps noir" comme l'ardoise, le rayonnement solaire chauffe naturellement l'air qui
+                    circule,
+                    pouvant atteindre <b>près de 70°C à la sortie du panneau</b>.
+                </p>
+            </div>
+        </div>
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/fabrication_sechoir_solaire.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Séchoir solaire</h3>
+                <p>Sur le même principe de fonctionnement que le chauffage solaire, le séchoir permet quant à lui de
+                    sécher et déshydrater de nombreux types de fruits, légumes et plantes. On peut ainsi <b>conserver
+                        ses aliments plus longtemps</b> tout en conservant au maximum leurs qualités nutritionnelles ou
+                    propriétés médicinales.
+                </p>
+            </div>
+        </div>
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/fabrication_module_conservation.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Garde-manger ou modules de conservation</h3>
+                <p>La plupart des fruits et légumes perdent en qualité nutritionnelle et en goût lorsqu'ils
+                    sont conservés au réfrigérateur. Nous pouvons créer des modules de conservation qui s'adaptent aux
+                    besoins de conservation de nos aliments : température, lumière, taux d'humidité. Avec un peu
+                    d'organisation, nous pouvons <b>réduire la taille de nos réfrigérateurs et notre consommation
+                        électrique</b> en tirant profit du meilleur de nos fruits et légumes.</p>
+            </div>
+        </div>
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/fabrication_composteur.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Composteur</h3>
+                <p>Pour <b>réduire notre production d'ordures ménagères</b>, nous pouvons tous utiliser des composteurs afin de
+                    transformer la matière organique de nos jardins et de nos cuisines en engrais naturel. La Fougère
+                    propose des ateliers pour fabriquer des composteurs de toute taille s'adaptant aux besoins de nos
+                    coopérateurs.
+                </p>
+            </div>
+        </div>
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/fabrication_ruche.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Ruche</h3>
+                <p>Nous concevons des ruches pour les membres qui souhaitent accueillir une colonie
+                    d'abeille dans leurs jardins, lorsque la situation s'y prête. L'installation d'une ruche
+                    s'accompagne d'une formation à l'apiculture pour les néophytes.</p>
+            </div>
+        </div>
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/fabrication_chauffe_eau.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Chauffe-eau solaire</h3>
+                <p>Le chauffe-eau solaire est un panneau solaire thermique permettant de profiter du rayonnement
+                    solaire pour chauffer l'eau chaude sanitaire. 5m² de ces panneaux permettent de couvrir <b>90%
+                        des besoins en chaude d'un foyer de 4 personnes</b>.</p>
+            </div>
+        </div>
+        <p class="outro">
+            <b>Une autre idée ?</b><br/>
+            Rejoignez-nous et parlons-en !
+        </p>
+
+    </div>
+{% endblock %}

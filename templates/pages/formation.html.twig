@@ -1,0 +1,109 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Formation{% endblock %}
+
+{% block content %}
+    <div class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4">Formation</h2>
+
+        <p class="intro">
+            La transmission et l'apprentissage sont au cœur de la philosophie de La Fougère.<br/>
+            Des formations sont organisées pour les membres du collectif. Une participation financière est demandée
+            à chaque membre qui suit une formation afin de couvrir les frais (formateur, matériel, etc.) + 10% qui
+            permettront à La Fougère de développer ses activités.<br/>
+            Voici une liste non exhaustive d'idées de formations...
+        </p>
+
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/formation_plantes_sauvages.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Plantes sauvages comestibles</h3>
+                <p>
+                    Des dizaines de plantes sauvages comestibles nous entourent. Il suffit de se baisser pour les
+                    ramasser et profiter de cette source d’aliments sains et savoureux. C’est une mine d’éléments
+                    nutritionnels renfermant une quantité étonnante de vitamines, sels minéraux, oligo-éléments et
+                    antioxydants dont notre corps a besoin.</p>
+                <p>
+                    La Fougère souhaite mettre en place des formations pour mieux connaître ces plantes nous permettant
+                    d'accéder à <b>une alimentation plus autonome et naturelle</b>.
+                    De la théorie à la pratique, ces formations proposeront un parcours de la cueillette sauvage à
+                    la cuisine.
+                </p>
+            </div>
+        </div>
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/formation_permaculture.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Permaculture</h3>
+                <p>Au delà du simple jardinage, la permaculture est un concept global qui s'inspire du fonctionnement de
+                    la nature. Théorisée par les australiens Bill Mollison et David Holmgren, la permaculture vise à
+                    <b>concevoir des installations durables, résilientes, économes en travail et en énergie, en symbiose
+                        avec les écosystèmes naturels</b>. La permaculture repose sur 3 principes éthiques : prendre
+                    soin de la
+                    Terre, prendre soin des Hommes, partager équitablement les ressources.</p>
+                <p>
+                    Plusieurs formations seront proposées autour de la permaculture.
+                </p>
+            </div>
+        </div>
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/formation_gerer_une_ruche.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Gérer une ruche</h3>
+                <p>Connaître les différentes castes et métiers des abeilles, le cycle de vie de la colonie, les
+                    équipements et matériel utilisés, les gestes et règles de sécurité, etc. L'installation et la
+                    gestion d'une ruche ne sont pas à prendre à la légère.</p>
+                <p>La Fougère propose des formations pour <b>aider les membres qui souhaitent accueillir une colonie
+                        dans leur jardin</b> et récolter les produits issus de leurs ruches : miel, cire, gelée royale,
+                    etc.
+                </p>
+            </div>
+        </div>
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/formation_phytotherapie.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Phytothérapie</h3>
+                <p>
+                    Utilisée seule ou en complément d'une prise en charge médicale adaptée, la phytothérapie repose sur
+                    l'emploi thérapeutique de plantes dites "médicinales". La phytothérapie est une pratique ancestrale
+                    toujours très utilisée en Afrique et en Asie.
+                </p>
+                <p>Les plantes peuvent être présentées de diverses façons : fraîches ou séchées pour faire des
+                    infusions, en gélules, préparation magistrale, en ampoule buvable, etc.</p>
+                <p>Venez participer aux formations de La Fougère pour (re)découvrir l'aubépine, la camomille, la
+                    valériane, le millepertuis, l'armoise, la lavande, la mélisse, l'oseille, le pourpier et bien d'autres
+                    plantes aux multiples vertus.
+                </p>
+            </div>
+        </div>
+        <div class="row action">
+            <div class="col-sm-4 col-xs-12">
+                <img class="img-responsive" src="{{ asset('images/formation_arduino.jpg') }}" alt="">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+                <h3>Arduino et Raspberry Pi</h3>
+                <p>Les cartes Arduino sont des cartes électroniques de développement avec un microcontrôleur
+                    programmable permettant d'interagir avec une multitudes de composants électroniques : capteurs,
+                    boutons, écrans, led, etc.</p>
+                <p>Les Raspberry Pi sont des micro-ordinateurs avec WIFI et Bluetooth intégrés sur lesquels on peut
+                    utiliser différents langages de programmation.</p>
+                <p>Ces deux technologies constituent une porte d'entrée ludique pour <b>l'apprentissage de la
+                        programmation informatique et de l'électronique</b>. Elles peuvent être des outils pertinents
+                    pour nous aider à développer des solutions d'autonomie low-tech.</p>
+            </div>
+        </div>
+
+        <p class="outro">
+            <b>Une autre idée ?</b><br/>
+            Rejoignez-nous et parlons-en !
+        </p>
+    </div>
+{% endblock %}

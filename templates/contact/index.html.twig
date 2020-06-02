@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% set successMessage = false %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+
+    <div class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4">Contact</h2>
+
+        {% for message in app.flashes('success') %}
+            {% set successMessage = true %}
+            <div class="alert alert-success">
+                {{ message|trans }}
+            </div>
+        {% endfor %}
+
+        {% if not successMessage %}
+            <div class="intro">
+                Pour nous contacter, merci d'utiliser le formulaire ci-dessous.<br/>
+                N'hésitez pas à nous laisser votre numéro de téléphone si vous le souhaitez.<br/>
+                Nous reviendrons vers vous au plus vite.
+            </div>
+        {% endif %}
+
+        <div class="row">
+            <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">
+                {{ form_start(form) }}
+                {{ form_widget(form) }}
+                <input type="submit" class="btn btn-primary" value="{{ 'contact.submit.label'|trans }}" />
+                {{ form_end(form) }}
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
