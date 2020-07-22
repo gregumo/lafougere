@@ -8478,3 +8478,8 @@ h3{
 textarea.form-control{
   height: 150px!important;
 }
+
+.date{
+  color: #B38E76;
+  font-size: 0.8em;
+}
