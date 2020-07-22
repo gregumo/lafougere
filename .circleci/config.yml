@@ -25,9 +25,6 @@ jobs:
         machine:
             enabled: true
         steps:
-            - add_ssh_keys:
-                  fingerprints:
-                      - "bf:0f:3c:88:ef:8d:42:ce:d5:d3:09:cc:a7:a7:d6:e1"
             - run:
                   name: "Deploy image to production"
                   command: |
