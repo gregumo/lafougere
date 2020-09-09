@@ -56,6 +56,7 @@ class ContactController extends AbstractController
 
             $email = (new Email())
                 ->from($contact->getFrom())
+                ->replyTo($contact->getFrom())
                 ->to('contact@lafougere.org')
                 ->subject($this->translator->trans('contact.email.subject'))
                 ->text($mailContent)
